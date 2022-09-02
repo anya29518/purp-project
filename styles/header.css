@@ -1,0 +1,150 @@
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  font-weight: 400;
+  font-size:2vh;
+  display: flex;
+
+  /* height: 15vh; */
+  /* background-color: #7c878b; */
+  /* background-color: #8b2886;
+  color: #000; */
+  flex: 0 0 auto;
+}
+
+.borderH{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  /* background-color: #000; */
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.menu>ul{
+list-style: none;
+margin: 0;
+padding-left: 0;
+width: 20%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+transition: .5s linear;
+}
+
+.menu>ul>li>a, .search{
+text-decoration: none;
+transition: .2s linear;
+color: antiquewhite;
+margin: 0 20px;
+}
+
+.menu>ul>li{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:2.5vh;
+}
+
+.logo-menu{
+  height: 5vh;
+  padding: 10px;
+}
+
+
+     
+.imgHeader{
+  height: 3vh;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+  
+.imgHeader:hover{
+  cursor: pointer;
+}
+
+.plus{
+  color:#f74b3b;
+  }
+  
+  .plus:hover{
+  cursor: pointer;
+  color: #ff4433;
+  }
+
+  .exit_button{
+    background-color: #8b2886;
+    /* font-size: 1.5em; */
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+
+.exit_button:hover{
+    background-color: rgb(255, 105, 105);
+}
+.popUpMenu{
+  position: relative;
+  display: inline-block;
+}
+
+.search{
+    height: 3vh;
+  }
+  .hidden{
+    display:flex;
+    visibility: hidden;
+    background-color: #fff;
+    color: #000;
+    border:0.8px solid #d4d4d4;
+    border-radius: 35px;
+    padding: 5px 0;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    z-index:2;
+  }
+  .hSearch{
+    margin-left: -270px;
+    margin-top: -50px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    background-color: #8b288600;
+  }
+  .divSPic{
+    margin: 3%;
+    padding: 2%;
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+
+  }
+
+
+.spic{
+  margin: 1%;
+  max-width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

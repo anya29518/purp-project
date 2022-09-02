@@ -1,0 +1,231 @@
+
+body{
+    font-family: 'Century Gothic';
+    /* background-color: #ce5cd8; */
+    background: no-repeat linear-gradient(45deg,#ce5cd8,#9dc3d4);
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+    min-width: 100vh;
+    /* overflow: hidden; */
+}
+
+header{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 0.1%;
+    max-height: 10%;
+}
+.i-logo{
+    width: 10%;
+}
+
+.content{
+  display: flex;
+}
+.menu_cat {
+  
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 1%;
+    height: auto;
+    width: auto;
+    left: 0;
+    /* margin: 0, 30%; */
+    padding: 10px 50px;
+    background: rgba(255, 255, 255, 0.818);
+    border-radius: 20px;
+    
+  }
+  .menu_title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    font-size: 16px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left: 2px solid #a461b9;
+  }
+  .menu_list {
+    padding: 0;
+    list-style: none;
+  }
+  /* .menu_list a:before {
+    /* content: "\2014";
+    margin-right: 14px;
+  } */ 
+  .menu_list a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    padding: 6px; 
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #444;
+    transition: .3s linear;
+  }
+ 
+
+
+.pics{
+  margin-top: 10%;
+  margin-left: 10%;
+  display: flex;
+  /* position: relative; */
+  flex-wrap: wrap;
+  width: 69vw;
+  padding: 5%;
+}
+
+.pic{
+  width: 27%;
+  margin: 0 3% 5% 0;
+  padding: 1%;
+  /* background-color: rgba(255, 255, 255, 0.644); */
+  border: 2px solid #fff;
+  border-radius: 10%;
+}
+.pic:hover{
+  box-shadow:  0 0 20px #fff;
+}
+.img{  
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 90%;
+
+}
+
+.title{
+  text-align: center;
+  color: #000;
+}
+
+.cath{
+  padding: 6px; 
+  height: 5%;
+}
+.cath:hover {
+    color: antiquewhite;
+    background: no-repeat linear-gradient(45deg,#ce5cd8,#9dc3d4);}
+
+
+section, input[type='checkbox'], label, ins, span, i
+{ box-sizing: border-box; user-select: none; }
+input[type='checkbox']{ box-sizing: border-box; user-select: none; }
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+
+
+input[type='checkbox']{ height: 0; width: 0;
+position: absolute; }
+
+input[type='checkbox'] + label{
+  position: relative;
+  display: flex;
+  margin: .6em 0;
+  align-items: center;
+  color: #3c3c3c;
+  transition: color 250ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 2em;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins > i{
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  color: #490059;
+}
+input[type='checkbox'] + label > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 2px solid #9E9E9E;
+  border-radius: 2px;
+  cursor: pointer;  
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
+  color: rgb(31, 113, 148);
+}
+input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
+  background: rgba(255, 255, 255, 0.3);
+}
+input[type='checkbox']:checked + label > ins{ height: 100%; }
+
+input[type='checkbox']:checked + label > span{
+  border: .5em solid #a461b9;
+  animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox']:checked + label > span:before{
+  content: "";
+  position: absolute;
+  top: .6em;
+  left: .2em;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(1);
+  }
+  33%{    
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);    
+  }
+}
+@keyframes checkbox-check{
+  0%{
+    width: 0;
+    height: 0;
+    border-color: #e5e5e5;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{    
+    width: .2em;
+    height: .5em;    
+    border-color: #e5e5e5;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}
+
+
+.noimg{
+  font-size: 3em;
+}

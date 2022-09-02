@@ -1,0 +1,61 @@
+.cropImg{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #info{
+    padding-right: 10vw;
+    width: 40%;
+  }
+
+  .avatar{
+      cursor:pointer;
+      width: 50%;
+      border-radius: 50%;
+  }
+
+  .avatar:hover{
+    width: 49%;
+  }
+
+
+  .photo_form{
+    z-index:3;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: -325px;
+    margin-top: -300px;
+    left:50%;
+    top:50%;
+    height: 600px;
+    width: 650px;
+    border-radius: 12px;
+    background-color: #fff;
+    border:0.8px solid #d4d4d4;
+}
+
+.form-box{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box{
+  height: 70%;
+}
+
+.downForm{
+  width: 75%;
+  height: 25%;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+}

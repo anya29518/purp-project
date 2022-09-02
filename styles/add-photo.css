@@ -1,0 +1,162 @@
+.photoRedactor{
+  margin-top:5vh;
+  margin-bottom:7vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  width: 80vw;
+  height: 100%;
+  /* background-color: #d4d4d4; */
+}
+
+.boxPhoto{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80%;
+  width: 50%;
+}
+
+.param{
+  height: 85%;
+  font-weight: 600;
+  font-size: 1.9vh;
+  justify-content: space-between;
+  flex-direction: column;
+
+  display: flex;
+  width: 40%;
+}
+
+.param>div{
+width: 100%;
+}
+
+.param label{
+  padding: 5% 0;
+}
+
+.param .buttonR{
+  width: 50%;
+}
+
+
+
+.selects{
+  margin-top: 5%;
+  margin-bottom: 25%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* max-width: 40%; */
+}
+
+.select{
+  margin: 15px;
+}
+
+.photo{
+  width: 80%;
+}
+
+.photo_form{
+  z-index:3;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: -325px;
+  margin-top: -300px;
+  left:50%;
+  top:50%;
+  height: 600px;
+  width: 650px;
+  border-radius: 12px;
+  background-color: antiquewhite;
+  border:0.8px solid #d4d4d4;
+}
+
+.form-box{
+height: 75%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.image-box{
+height: 70%;
+}
+
+.downForm{
+width: 75%;
+height: 25%;
+display:flex;
+align-items: center;
+justify-content:space-between;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+
+.filters{
+  margin-top:1.6vh;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+.buttonUp{
+  font-weight: 400;
+  font-size: 1.1em;
+  height: 7.5vh;
+  width: 15vw;
+  background-color: #47ff6f;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.buttonUp:hover{
+background-color: #75ff47;
+}
+.file-input label {
+  font-family: 'Open Sans', sans-serif;
+  width: 15vw;
+  font-weight: 400;
+  font-size: 1.1em;
+  display: block;
+  position: relative;
+  height: 7vh;
+  border-radius: 12px;
+  background-color: #921bb0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.file-input label:hover{
+  background-color: #9f2bbc;
+}
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.add-form{
+  width: 100%;
+}
